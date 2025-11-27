@@ -1,0 +1,243 @@
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f8e0c7, #e8c097);
+  color: #3b2a1a;
+}
+
+
+.navbar {
+  background: linear-gradient(90deg, #8b5e3c, #70462c);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px 0;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a {
+  color: #fffaf3;
+  text-decoration: none;
+  padding: 10px 18px;
+  font-weight: 600;
+  transition: 0.3s;
+  letter-spacing: 0.5px;
+  border-radius: 8px;
+}
+
+.navbar a:hover {
+  background-color: #a47148;
+  transform: translateY(-2px);
+}
+
+.navbar a.active {
+  background-color: #d8a474;
+  color: #fff;
+}
+
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+}
+
+h1, h2 {
+  color: #3e2b1a;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+
+form {
+  background: #fffaf3;
+  padding: 20px 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 450px;
+  transition: 0.3s ease;
+}
+
+form:hover {
+  transform: translateY(-3px);
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #4b3b2a;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #cdbba2;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: #fff;
+  transition: 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  border-color: #a47148;
+  box-shadow: 0 0 4px rgba(164, 113, 72, 0.4);
+  outline: none;
+}
+
+input[type="submit"],
+button {
+  width: 100%;
+  background: linear-gradient(90deg, #8b5e3c, #70462c);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background: linear-gradient(90deg, #a47148, #8b5e3c);
+  transform: scale(1.03);
+}
+
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 25px;
+}
+
+table {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fffdf8;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+th {
+  background-color: #a47148;
+  color: white;
+  padding: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #e0d6c9;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #f7f2ed;
+}
+
+tr:hover {
+  background-color: #f0d7b8;
+  transition: 0.3s;
+}
+
+
+.green { background-color: #b9fcb4 !important; }
+.yellow { background-color: #fff9b0 !important; }
+.red { background-color: #ffb3b3 !important; }
+
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+
+@media (max-width: 768px) {
+  table {
+    font-size: 14px;
+    width: 100%;
+  }
+  form {
+    width: 90%;
+  }
+  .navbar a {
+    padding: 10px;
+  }
+}
+
+.report-section {
+  background: #fffaf3;
+  border-radius: 16px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  padding: 25px;
+  width: 90%;
+  max-width: 700px;
+  margin: 30px auto;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.report-section:hover {
+  transform: translateY(-3px);
+}
+
+.report-section h2 {
+  color: #4b3b2a;
+  margin-bottom: 20px;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.report-stats {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.report-stats div {
+  background: linear-gradient(145deg, #e6c4a8, #f8e6c0);
+  border-radius: 12px;
+  padding: 15px 20px;
+  margin: 10px;
+  width: 150px;
+  font-weight: bold;
+  color: #3b2a1a;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.report-stats div:hover {
+  background: linear-gradient(145deg, #f5cda4, #fce3c3);
+  transform: scale(1.05);
+}
+
+canvas {
+  width: 100% !important;
+  max-width: 600px;
+  height: 350px !important;
+  margin: 0 auto;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  padding: 15px;
+}
